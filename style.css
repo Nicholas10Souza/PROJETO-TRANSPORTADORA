@@ -274,9 +274,37 @@ p {
     transform: scale(1.1); /* Efeito de aumentar ao passar o mouse */
 }
 
+@media (max-width: 800px) {
+    .header {
+        flex-direction: column; /* Alinha os itens verticalmente em telas menores */
+    }
 
+    .header a {
+        font-size: 20px; /* Reduz o tamanho da fonte dos links */
+    }
 
- 
+    .about h1 {
+        font-size: 3rem; /* Reduz o tamanho do título */
+    }
+
+    .about p {
+        font-size: 1em; /* Reduz o tamanho do texto */
+    }
+
+    .fotos img, .clientes img {
+        max-width: 100%; /* Permite que as imagens ocupem 100% do espaço disponível */
+    }
+}
+
+@media (max-width: 480px) {
+    .links-footer ul {
+        list-style: none;
+    }
+
+    .footer-content {
+        flex-direction: column; /* Alinha o conteúdo do footer verticalmente */
+    }
+}
 
 
 
