@@ -93,42 +93,41 @@ video {
 }
 
 .logo-text{
+    font-family: 'Montserrat', sans-serif;
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    font-family: 'Montserrat', sans-serif;
 }
 
 .about {
-  
+  font-family: 'Montserrat', sans-serif;
   padding: 20px;
   text-align: center;
   margin-top: 100px; 
-  font-family: 'Montserrat', sans-serif;
 }
 .about-text {
+    font-family: 'Montserrat', sans-serif;
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
     color: #8d4a26;
-    font-family: 'Montserrat', sans-serif;
     font-weight: 600;
 }
 
 .about h1 {
+    font-family: 'Montserrat', sans-serif;
     font-size: 4rem;
     margin-bottom: 20px;
-    font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     }
 
 .about p {
+font-family: 'Montserrat', sans-serif;
   font-size: 1.2em;
   line-height: 1.6;
   margin-bottom: 20px;
-  font-family: 'Montserrat', sans-serif;
 }
 
 .fotos {
@@ -161,17 +160,27 @@ video {
   border-radius: 8px; /* Adiciona cantos arredondados para um visual mais agradável */
 }
 
-
+/* Estilos Gerais */
 p {
+    font-family: 'Montserrat', sans-serif;
     color: white;
     font-size: 15px;
-    font-family: 'Montserrat', sans-serif;
 }
 
-.contato h2{
-    color: #8f8f8f;
-    margin-bottom: 1.0rem;
+/* Títulos da Seção logo footer */
+.logo-footer h1 {
     font-family: 'Montserrat', sans-serif;
+    margin-top: auto;
+    color: #8f8f8f;
+    margin-bottom: 1rem; /* Ajuste no espaçamento */
+}
+
+/* Títulos da Seção de Contato */
+.contato h2 {
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 20px;
+    color: #8f8f8f;
+    margin-bottom: 1rem; /* Ajuste no espaçamento */
 }
 
 /* Footer */
@@ -179,49 +188,105 @@ p {
     display: flex;
     align-items: center;
     color: #8f8f8f;
-    padding: 4rem 1rem;
-    gap: 2rem;
+    padding: 2rem 1rem; /* Reduzindo o padding */
+    margin-bottom: 4rem; /* Espaço abaixo do footer */
 }
-.download-options>* {
+
+.download-options > * {
     margin: 1rem;
 }
-.download-options>p:first-child {
+
+.download-options > p:first-child {
     font-weight: bold;
     color: #fff;
 }
 
-.download-options>div {
+.download-options > div {
     display: flex;
 }
 
-.download-options>div img{
+.download-options > div img {
     width: 100px;
 }
 
+/* Logo do Footer */
 .logo-footer {
-   text-align: center; 
-   color: #8f8f8f;
-    margin-bottom: 0.9rem;
     font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: #8f8f8f;
+    margin-bottom: 0.9rem;
 }
 
-.links-footer h3{
+/* Links do Footer */
+.links-footer h3 {
+    font-family: 'Montserrat', sans-serif;
     color: #fff;
     margin-bottom: 0.9rem;
-    font-family: 'Montserrat', sans-serif;
 }
 
-
-.links-footer ul li{
-    margin-bottom: 0.5rem;
+.links-footer ul li {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 1.0rem; /* Ajuste no espaçamento */
     cursor: pointer;
-    font-family: 'Montserrat', sans-serif;
 }
 
+/* Social Media */
+.social-media {
+    display: flex; /* Usar flexbox para alinhamento horizontal */
+    justify-content: center; /* Centraliza os ícones horizontalmente */
+    margin-top: auto; /* Adiciona um espaço acima dos ícones */
+    margin-left: auto; /* Margem esquerda automática para centralizar */
+    margin-right: auto; /* Margem direita automática para centralizar */
+}
+
+.social-media img {
+    height: 40px; /* Ajustar a altura dos ícones */
+    margin: 0 10px; /* Espaço entre os ícones */
+    transition: transform 0.3s; /* Transição para efeito hover */
+}
+
+.social-media img:hover {
+    transform: scale(1.1); /* Efeito de aumentar ao passar o mouse */
+}
+
+/* Contato Container */
+.contato-container {
+    font-family: 'Montserrat', sans-serif;
+    display: flex; /* Usar flexbox para alinhar itens lado a lado */
+    justify-content: space-between; /* Espaço entre os dois grupos */
+    align-items: center; /* Alinhamento vertical */
+    margin-top: 10px; /* Espaço acima do container */
+    max-width: 1200px; /* Defina uma largura máxima se necessário */
+    margin-left: auto; /* Margem esquerda automática para centralizar */
+    margin-right: auto; /* Margem direita automática para centralizar */
+}
+
+/* Links Úteis */
+.links-uteis {
+    font-family: 'Montserrat', sans-serif;
+    text-align: left; /* Alinha o texto à esquerda */
+    color: #fff; /* Cor do texto, link Principal */
+    margin-bottom: 0.9rem; /* Espaço entre link principal e os links */
+}
+
+.links-uteis ul {
+    color: #8f8f8f; /* Cor dos links */
+    list-style: none; /* Remove estilos de lista padrão */
+    padding: 0; /* Remove o padding padrão */
+}
+
+.links-uteis ul li {
+    margin-bottom: 0.5rem; /* Ajuste no espaçamento */
+}
+
+/* Copyright */
 .copyright {
     color: #fff;
-    padding: 2rem 0;
+    padding: 1rem 0; /* Reduzindo o padding */
     text-align: center;
+    margin-top: 1rem; /* Espaço acima do copyright */
+    font-size: 6px;
+    margin-bottom: -7rem; /* Espaço abaixo do copyright */
 }
 
 /* Media Queries */
@@ -254,24 +319,6 @@ p {
     list-style: none;
     }
 
-}
-
-/* Footer */
-
-.social-media {
-    display: flex; /* Usar flexbox para alinhamento horizontal */
-    flex-direction: column; /* Alinha os ícones verticalmente */
-    gap: 10px; /* Espaço entre os ícones */
-    align-items: center; /* Centraliza os ícones horizontalmente */
-}
-
-.social-media img {
-    height: 60px; /* Altura dos ícones */
-    transition: transform 0.3s; /* Transição para efeito hover */
-}
-
-.social-media img:hover {
-    transform: scale(1.1); /* Efeito de aumentar ao passar o mouse */
 }
 
 @media (max-width: 800px) {
